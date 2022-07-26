@@ -1,4 +1,6 @@
 const express = require('express');
+const homeController = require("../controllers/homeController");
+
 const psicologosController = require("../controllers/psicologosController");
 const psicologosValidator = require("../validations/Psicologos/psicologosValidator");
 
@@ -13,6 +15,13 @@ const loginValidator = require('../validations/Login/loginValidator');
 const loginHandler = require("../middlewares/loginHandler");
 
 const routes = express.Router();
+
+/*
+    -  ROTA DA PAGINA INICIAL
+        -> GET /
+*/
+
+routes.get("/", homeController.welcomeIndex);
 
 /*
     -  ROTA DE AUTENTICAÇAO
