@@ -1,5 +1,8 @@
 const express = require('express');
+
 const homeController = require("../controllers/homeController");
+
+const dashboardController = require("../controllers/dashboardController");
 
 const psicologosController = require("../controllers/psicologosController");
 const psicologosValidator = require("../validations/Psicologos/psicologosValidator");
@@ -8,13 +11,20 @@ const pacientesController = require("../controllers/pacientesController");
 const pacientesValidator = require('../validations/Pacientes/pacientesValidator');
 
 const atendimentosController = require("../controllers/atendimentosController");
-const atendimentosValidator = require("../validations/Atendimentos/atendimentosValidator")
+const atendimentosValidator = require("../validations/Atendimentos/atendimentosValidator");
 
 const loginController = require("../controllers/loginController");
 const loginValidator = require('../validations/Login/loginValidator');
 const loginHandler = require("../middlewares/loginHandler");
 
 const routes = express.Router();
+
+/*
+    -  ROTA DA DASHBOARD
+        -> GET /dashboard
+*/
+
+routes.get("/dashboard", dashboardController.counterInformation);
 
 /*
     -  ROTA DA PAGINA INICIAL
