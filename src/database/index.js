@@ -7,10 +7,11 @@
 */
 
 const Sequelize = require("sequelize");
+require('dotenv').config();
 
-const DB_NAME = "heroku_c94f2f0510a6f3e";
-const DB_USER = "b6c34e3baad797";
-const DB_PASS = "57cb08d6";
+const DB_NAME = process.env.DB_NAME;
+const DB_USER = process.env.DB_USER;
+const DB_PASS = process.env.DB_PASS;
 const DB_CONFIG = {
     dialect: "mysql",
     host: "us-cdbr-east-06.cleardb.net",
