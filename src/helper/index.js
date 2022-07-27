@@ -1,13 +1,3 @@
-/* const dateConverter = {
-    convertDate (date) {
-        const [day, month, year] = date.split('/');
-        const dateConverted = `${year}-${month}-${day} 00:00:00`;
-        return dateConverted;
-    }
-}
-
-module.exports = { dateConverter }; */
-
 const helperFunctions = {
     
     parseDate(dateTime) {
