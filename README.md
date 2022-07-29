@@ -27,6 +27,6 @@ Para ajudar nos atendimentos, eles precisam de uma API que permita criar registr
 
 ## :page_with_curl: Documentação
 
-A documentação da API se encontra na pasta "/docs" desse repositório. E também disponibilizamos o botão para rodar no Insomnia as configurações estabelecidas dos endpoints já hospedados no Heroku.
+A documentação da API se encontra na pasta "/docs" desse repositório, é recomendável acessar a pasta da documentação e executar o comando "npx serve" com um terminal dentro da mesma, pois é necessário para visualizar o conteúdo dos arquivos. Também disponibilizamos o botão para rodar no Insomnia as configurações estabelecidas dos endpoints já hospedados no Heroku.
 
 
